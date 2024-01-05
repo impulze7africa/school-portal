@@ -3,7 +3,7 @@
 	//variables
 	define("Host","localhost"); // localhost
 	define("User","plushher_portal_user"); // root
-	define("Password","}9$PWK8g(8GK"); //
+	define("Password","o^9hNsrL=eDp"); //
 	define("Db_Name","plushher_portal_db"); // arahman_portal
 	define("Conn_error","could not connect to server at this time"); // all of the rest below may be defined later
 	define("db_conn_error","<div id='oops'>
