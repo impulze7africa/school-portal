@@ -17,3 +17,8 @@ jobs:
           cp -R * $DEPLOYPATH
         env:
           DEPLOYPATH: /home/plushher/public_html/schoolportal.plushheritage.com.ng
+
+      - name: Debugging
+        run: |
+          ls -la
+          ls -la $DEPLOYPATH

@@ -12,7 +12,7 @@ define( 'DB_NAME', 'plushher_portal_db');
 define( 'DB_USER', 'plushher_portal_user' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '}9$PWK8g(8GK' );
+define( 'DB_PASSWORD', 'o^9hNsrL=eDp' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
