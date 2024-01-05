@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Dec 17, 2023 at 08:57 PM
--- Server version: 10.6.15-MariaDB
--- PHP Version: 8.1.16
+-- Host: 127.0.0.1
+-- Generation Time: Jan 05, 2024 at 10:03 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `devtestc_arahman_portal`
+-- Database: `school_portal`
 --
 
 -- --------------------------------------------------------
@@ -44,11 +44,11 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`admin_id`, `admin_active`, `type`, `admin_firstname`, `admin_lastname`, `admin_email`, `admin_password`, `admin_cookie_session`, `admin_timestamp`) VALUES
-(1, 1, 'owner', 'Ahmed', 'Olusesi', 'owner', '5f4dcc3b5aa765d61d8327deb882cf99', '', '2022-01-03 09:49:31'),
-(2, 1, 'headmaster', 'Headmaster', '1', 'headmaster1', '5f4dcc3b5aa765d61d8327deb882cf99', '', '2022-01-08 14:00:53'),
-(3, 1, 'admission', 'seye', 'alade', 'admission1', '5f4dcc3b5aa765d61d8327deb882cf99', '', '2022-04-06 14:28:14'),
-(4, 1, 'accountant', 'teni', 'alade', 'accountant1', '5f4dcc3b5aa765d61d8327deb882cf99', '', '2022-04-06 14:28:14'),
-(5, 1, 'principal', 'anita', 'anita', 'Principal1', '5f4dcc3b5aa765d61d8327deb882cf99', '', '2022-04-06 14:28:14');
+(1, 1, 'owner', 'Ahmed', 'Olusesi', 'superadmin', '5f4dcc3b5aa765d61d8327deb882cf99', '', '2022-01-03 09:49:31'),
+(2, 1, 'headmaster', 'Headmaster', '1', 'headmaster', '5f4dcc3b5aa765d61d8327deb882cf99', '', '2022-01-08 14:00:53'),
+(3, 1, 'admission', 'seye', 'alade', 'admission', '5f4dcc3b5aa765d61d8327deb882cf99', '', '2022-04-06 14:28:14'),
+(4, 1, 'accountant', 'teni', 'alade', 'accountant', '5f4dcc3b5aa765d61d8327deb882cf99', '', '2022-04-06 14:28:14'),
+(5, 1, 'principal', 'anita', 'anita', 'principal', '5f4dcc3b5aa765d61d8327deb882cf99', '', '2022-04-06 14:28:14');
 
 -- --------------------------------------------------------
 

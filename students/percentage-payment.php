@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 
 ?>
 <?php
@@ -12,7 +12,7 @@ if(!isset($_SESSION['school_type']) || !isset($_SESSION['email'])){
 $toggle_position = mysqli_query($connect,"SELECT admin_pay_reg_toggle FROM admin_owner WHERE admin_pay_reg_toggle = 'close'") or die(db_conn_error);
 if(mysqli_num_rows($toggle_position) == 1){
 
-  include_once ('../../incs-arahman/header-admin.php');
+  include_once ('../incs-arahman/header-admin.php');
 
 echo 'Payment from portal is currently close';
 
@@ -68,7 +68,7 @@ if($_SESSION['school_type'] == 'Primary school'){
 $email = $_SESSION['email'];
  $class_price  = ceil($var_fees) * 100;
 
- include ('../../incs-arahman/pay.php');
+ include ('../incs-arahman/pay.php');
 
 
 
@@ -76,7 +76,7 @@ $email = $_SESSION['email'];
   $_SESSION['percentage'] = ($var_fees/$_SESSION['school_fees']) * 100;
   $email = $_SESSION['email'];
   $class_price  = ceil($var_fees) * 100;
-  include ('../../incs-arahman/pay.php');
+  include ('../incs-arahman/pay.php');
 }
 
 }
@@ -92,7 +92,7 @@ $email = $_SESSION['email'];
 
 ?>
 
-<?php include_once ('../../incs-arahman/header-admin.php');?>
+<?php include_once ('../incs-arahman/header-admin.php');?>
 
 
 

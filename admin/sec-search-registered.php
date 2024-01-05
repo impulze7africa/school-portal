@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 //include("../incs_shop/cookie_for_most.php");
 //include('../users/includes/menu.php');
 
@@ -21,9 +21,9 @@ if(!isset($_GET['search-registered-sec'])){
 }
 
 ?>
-<?php require_once ('../../incs-arahman/dashboard.php');?>
+<?php require_once ('../incs-arahman/dashboard.php');?>
 <?php
-include_once ('../../incs-arahman/deny-student.php');
+include_once ('../incs-arahman/deny-student.php');
 ?>
 
 
@@ -54,11 +54,11 @@ $_GET = array();
 }
 ?>
 <?php
-include_once ('../../incs-arahman/reject-student-status.php');
+include_once ('../incs-arahman/reject-student-status.php');
 ?>           
 
 <?php
-include ('../../incs-arahman/paginate.php');
+include ('../incs-arahman/paginate.php');
 
 
 $statement = "secondary_school_students LEFT JOIN secondary_common_e ON secondary_common_e_students_id = secondary_id WHERE (sec_paid = '0' AND sec_admit = '0' AND sec_active_email = '1') AND (sec_firstname LIKE '%".mysqli_real_escape_string($connect, $_GET['search-registered-sec'])."%' OR sec_surname LIKE '%".mysqli_real_escape_string($connect, $_GET['search-registered-sec'])."%') ORDER BY secondary_id DESC";
@@ -79,7 +79,7 @@ $page = (int)(!isset($_GET["page"]) ? 1 : $_GET["page"]);
               <div class="col-12 grid-margin">
                 <div class="card">
                 <?php
-include_once ('../../incs-arahman/sec-recently-registered.php');
+include_once ('../incs-arahman/sec-recently-registered.php');
 ?>
 
 
@@ -89,7 +89,7 @@ include_once ('../../incs-arahman/sec-recently-registered.php');
             </div>
          
            
-            <?php require_once ('../../incs-arahman/dashboard-footer.php'); ?>
+            <?php require_once ('../incs-arahman/dashboard-footer.php'); ?>
 
 
            

@@ -1,7 +1,7 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
-include("../../incs-arahman/sec_cookie_for_most_teachers.php");
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
+include("../incs-arahman/sec_cookie_for_most_teachers.php");
 
 ?>
 <?php
@@ -37,7 +37,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST['delete_assignment'])){
 ?>
 
 
-<?php include("../../incs-arahman/header-teacher-students.php");?>
+<?php include("../incs-arahman/header-teacher-students.php");?>
 
 
 
@@ -593,7 +593,7 @@ if(mysqli_num_rows($query_read_more) > 20){
                 </div>
                 <!-- content-wrapper ends -->
                 <!-- partial:partials/_footer.html -->
-				<?php include_once("../../incs-arahman/footer-teacher-students.php"); ?>
+				<?php include_once("../incs-arahman/footer-teacher-students.php"); ?>
 
 
 

@@ -1,6 +1,6 @@
 <?php
-require_once ('../incs-arahman/config.php');
-require_once ('../incs-arahman/gen_serv_con.php');
+require_once ('incs-arahman/config.php');
+require_once ('incs-arahman/gen_serv_con.php');
 $page_title = 'Email Verification';
 
 
@@ -9,7 +9,7 @@ $page_title = 'Email Verification';
 exit();}
 
 
-include ('../incs-arahman/header.php');
+include ('incs-arahman/header.php');
 
 echo '<header id="home" class="home">
             <div class="overlay-fluid-block">

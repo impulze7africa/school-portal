@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 
 ?>
 <?php
@@ -231,8 +231,8 @@ exit;
 ?>
 
 <?php
-include_once ('../../incs-arahman/header-admin.php');
-include('../../incs-arahman/menu.php');
+include_once ('../incs-arahman/header-admin.php');
+include('../incs-arahman/menu.php');
 ?>
 
 
@@ -292,4 +292,4 @@ include('../../incs-arahman/menu.php');
     </div>
     </section>
 
-    <?php include ('../../incs-arahman/footer.php'); ?>
+    <?php include ('../incs-arahman/footer.php'); ?>

@@ -1,7 +1,7 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
-include("../../incs-arahman/cookie_for_most_students.php");
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
+include("../incs-arahman/cookie_for_most_students.php");
 //include('../users/includes/menu.php');
 ?>
 <?php
@@ -16,7 +16,7 @@ if(!isset($_SESSION['primary_id'])){   //Not a student? Please leave
                 $email = $_SESSION['pri_email'];
                $_SESSION['term'] = $_POST['term'];
                $_SESSION['session'] = $_POST['session'];
-                require_once ('../../incs-arahman/pay.php');
+                require_once ('../incs-arahman/pay.php');
  } ?>
 <?php 
   if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST['pay_module'])){
@@ -24,9 +24,9 @@ if(!isset($_SESSION['primary_id'])){   //Not a student? Please leave
                 $class_price = $_POST['module_price'] * 100;
                 $email = $_SESSION['pri_email'];
               
-                require_once ('../../incs-arahman/pay.php');
+                require_once ('../incs-arahman/pay.php');
  } ?>
-<?php include("../../incs-arahman/header-students.php");?>
+<?php include("../incs-arahman/header-students.php");?>
 
 <?php
 	
@@ -564,7 +564,7 @@ echo '</tr>';
                 </div>
                 <!-- content-wrapper ends -->
                 <!-- partial:partials/_footer.html -->
-				<?php include_once("../../incs-arahman/footer-teacher-students.php"); ?>
+				<?php include_once("../incs-arahman/footer-teacher-students.php"); ?>
 
 
 

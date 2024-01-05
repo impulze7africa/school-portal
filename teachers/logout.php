@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 
 if(isset($_SESSION['primary_teacher_id'])){  
 mysqli_query($connect,"UPDATE primary_teachers SET primary_teacher_cookie = '' WHERE primary_teacher_id = '".$_SESSION['primary_teacher_id']."'") or die(db_conn_error);	

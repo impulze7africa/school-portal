@@ -1,6 +1,6 @@
 <?php
-require ('../../incs-arahman/config.php');
-require ('../../incs-arahman/gen_serv_con.php');
+require ('../incs-arahman/config.php');
+require ('../incs-arahman/gen_serv_con.php');
 ?>
 <?php
 $query_term_start = mysqli_query($connect, "SELECT term_start, term_end, choose_term FROM term_start_end ORDER BY term_start_end_id DESC LIMIT 1") or die(db_conn_error);
@@ -10,8 +10,8 @@ $query_term_start = mysqli_query($connect, "SELECT term_start, term_end, choose_
     $choose_term_var = $term_rows['choose_term'];
   }
   if(empty($start_var) || empty($end_var) || $choose_term_var != 'Third term'){ 
-    include ('../../incs-arahman/header-gen.php');
-include('../../incs-arahman/menu.php');
+    include ('../incs-arahman/header-gen.php');
+include('../incs-arahman/menu.php');
  
 
  echo '<section class="section main-banner" id="top" data-section="section1">
@@ -37,14 +37,14 @@ include('../../incs-arahman/menu.php');
    </div>
 </section>';
 
-   include ('../../incs-arahman/footer.php');
+   include ('../incs-arahman/footer.php');
    exit();
 
   }
 ?>
 <?php
-include ('../../incs-arahman/header-gen.php');
-include('../../incs-arahman/menu.php');
+include ('../incs-arahman/header-gen.php');
+include('../incs-arahman/menu.php');
 ?>
 <?php
 $signup_errors = array();
@@ -176,7 +176,7 @@ if($pri_school_type == 'Primary school'){
         </header>';
 	
 		
-    include ('../../incs-arahman/footer.php');
+    include ('../incs-arahman/footer.php');
 		exit();
 
 
@@ -269,7 +269,7 @@ if($pri_school_type == 'Primary school'){
         </header>';
 	
 		
-    include ('../../incs-arahman/footer.php');
+    include ('../incs-arahman/footer.php');
 		exit();
 
 
@@ -396,4 +396,4 @@ if($pri_school_type == 'Primary school'){
 
 
 
-   <?php include ('../../incs-arahman/footer.php'); ?>
+   <?php include ('../incs-arahman/footer.php'); ?>

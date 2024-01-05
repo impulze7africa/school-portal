@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 //include("../incs_shop/cookie_for_most.php");
 //include('../users/includes/menu.php');
 //$testtime = mysqli_query($connect, "SELECT CURRENT_TIMESTAMP() AS real_time");
@@ -26,10 +26,10 @@ $query = mysqli_query($connect, "DELETE FROM primary_school_students WHERE pri_t
 <?php
 //Forceful logout of the admin by the super admin
 //Forceful password change and logout of the admin by the super admin. The super admin wonts logged out immediately if he changes password
-include("../../incs-arahman/change-admin-pass.php");
+include("../incs-arahman/change-admin-pass.php");
 ?>
 
-<?php require_once ('../../incs-arahman/dashboard.php');?>
+<?php require_once ('../incs-arahman/dashboard.php');?>
 
 
         
@@ -1495,7 +1495,7 @@ $sum = array();
 
 
            
-            <?php require_once ('../../incs-arahman/dashboard-footer.php'); ?>
+            <?php require_once ('../incs-arahman/dashboard-footer.php'); ?>
 
            
        

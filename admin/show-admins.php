@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 //include("../incs_shop/cookie_for_most.php");
 //include('../users/includes/menu.php');
 
@@ -30,7 +30,7 @@ if($_SESSION['admin_type'] != OWNER){      // if not headmaster
 ?>
 
 
-<?php require_once ('../../incs-arahman/dashboard.php');?>
+<?php require_once ('../incs-arahman/dashboard.php');?>
 
   <!-- partial -->
         <div class="main-panel">
@@ -103,7 +103,7 @@ $_GET = array();
 
            
            <?php
-include ('../../incs-arahman/paginate.php');
+include ('../incs-arahman/paginate.php');
 $statement = "admin ORDER BY admin_id ASC";
            
 $page = (int)(!isset($_GET["page"]) ? 1 : $_GET["page"]);
@@ -180,7 +180,7 @@ if($row['type'] != 'owner'){
             </div>
          
            
-            <?php require_once ('../../incs-arahman/dashboard-footer.php'); ?>
+            <?php require_once ('../incs-arahman/dashboard-footer.php'); ?>
 
 
            

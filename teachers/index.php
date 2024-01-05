@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 
 ?>
 <?php
@@ -30,8 +30,8 @@ if(isset($_SESSION['secondary_teacher_id'])){   //logged in teachers dont have r
 }
 ?>
 <?php
-include ('../../incs-arahman/header-admin.php');
-include ('../../incs-arahman/menu-admin.php');
+include ('../incs-arahman/header-admin.php');
+include ('../incs-arahman/menu-admin.php');
 ?>
 
 <?php

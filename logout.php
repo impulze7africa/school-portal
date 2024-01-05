@@ -1,6 +1,6 @@
 <?php
-require_once ('../incs-arahman/config.php');
-require_once ('../incs-arahman/gen_serv_con.php');
+require_once ('incs-arahman/config.php');
+require_once ('incs-arahman/gen_serv_con.php');
 
 
 if(isset($_SESSION['primary_id']) AND $_SESSION['pri_admit'] == 1){  
