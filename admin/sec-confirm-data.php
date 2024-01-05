@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 //include("../incs_shop/cookie_for_most.php");
 //include('../users/includes/menu.php');
 
@@ -179,7 +179,7 @@ while ($row = mysqli_fetch_array($query)) {
 	}
 	
 }else{
-    require_once ('../../incs-arahman/dashboard.php');
+    require_once ('../incs-arahman/dashboard.php');
 echo ' 
 <div class="main-panel">
   <div class="content-wrapper">
@@ -238,7 +238,7 @@ echo '
 ';
    
    
-      require_once ('../../incs-arahman/dashboard-footer.php');
+      require_once ('../incs-arahman/dashboard-footer.php');
 exit();
 
 }
@@ -246,7 +246,7 @@ exit();
 
  
 ?>
- <?php require_once ('../../incs-arahman/dashboard.php');?>  
+ <?php require_once ('../incs-arahman/dashboard.php');?>  
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
@@ -434,7 +434,7 @@ exit();
 
             </div>
 
-           <?php require_once ('../../incs-arahman/dashboard-footer.php'); ?>
+           <?php require_once ('../incs-arahman/dashboard-footer.php'); ?>
 
 
 

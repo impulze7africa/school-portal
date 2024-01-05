@@ -1,7 +1,7 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
-//require_once("../../incs-arahman/cookie_for_most.php");
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
+//require_once("../incs-arahman/cookie_for_most.php");
 
 if(!isset($_SESSION['secondary_id'])){  
 	header("Location:".GEN_WEBSITE."/students");

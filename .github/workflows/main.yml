@@ -1,0 +1,19 @@
+name: Deploy to cPanel
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Deploy to cPanel
+        run: |
+          cp -R * $DEPLOYPATH
+        env:
+          DEPLOYPATH: /home/plushher/public_html/schoolportal.plushheritage.com.ng

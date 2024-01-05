@@ -1,7 +1,7 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
-//include("../../incs-arahman/sec_cookie_for_most_teachers.php");
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
+//include("../incs-arahman/sec_cookie_for_most_teachers.php");
 
 ?>
 <?php
@@ -12,7 +12,7 @@ if(!isset($_SESSION['secondary_teacher_id'])){   //Not a teacher? Please leave
 ?>
 
 
-<?php include("../../incs-arahman/header-teacher-students.php");?>
+<?php include("../incs-arahman/header-teacher-students.php");?>
 
 
 
@@ -33,7 +33,7 @@ if(!isset($_SESSION['secondary_teacher_id'])){   //Not a teacher? Please leave
 
 
 
-include_once ('../../incs-arahman/paginate.php');
+include_once ('../incs-arahman/paginate.php');
 
 $statement = "secondary_test_assignment_upload, secondary_school_classes WHERE secondary_class_id = secondary_test_upload_class_id AND secondary_test_upload_class_id='".$_SESSION['secondary_teacher_class_id']."'ORDER BY secondary_test_upload_id DESC";
 
@@ -155,7 +155,7 @@ echo '</tr>';
 
                 </div>
                 <?php echo pagination($statement,$per_page,$page,$url=GEN_WEBSITE.'/teachers/sec-resources.php?'); ?>
-				<?php include_once("../../incs-arahman/footer-teacher-students.php"); ?>
+				<?php include_once("../incs-arahman/footer-teacher-students.php"); ?>
 
 
 

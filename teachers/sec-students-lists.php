@@ -1,7 +1,7 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
-include("../../incs-arahman/sec_cookie_for_most_teachers.php");
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
+include("../incs-arahman/sec_cookie_for_most_teachers.php");
 
 ?>
 <?php
@@ -27,7 +27,7 @@ if(mysqli_num_rows($results) == 0){
   
   ?>
 <?php
-include ('../../incs-arahman/paginate.php');
+include ('../incs-arahman/paginate.php');
 $statement = "secondary_school_students, secondary_school_classes WHERE sec_paid = '1' AND sec_admit = '1' AND sec_active_email = '1' AND secondary_class_id = sec_class_id AND sec_class_id = '".$_SESSION['secondary_teacher_class_id']."' ORDER BY secondary_id ASC";
            
 $page = (int)(!isset($_GET["page"]) ? 1 : $_GET["page"]);

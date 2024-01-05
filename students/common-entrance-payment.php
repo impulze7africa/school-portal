@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 
 ?>
 <?php
@@ -18,10 +18,10 @@ $query_term_start = mysqli_query($connect, "SELECT term_start, term_end, choose_
     $choose_session = $term_rows['school_session'];
   }
   if(empty($start_var) || empty($end_var) || $choose_term_var != 'Third term'){ 
-    include ('../../incs-arahman/header-gen.php');
-include('../../incs-arahman/menu.php');
+    include ('../incs-arahman/header-gen.php');
+include('../incs-arahman/menu.php');
    echo 'Registration for new session is closed';
-   include ('../../incs-arahman/footer.php');
+   include ('../incs-arahman/footer.php');
    exit();
 
   }
@@ -65,7 +65,7 @@ if(isset($_POST['submit']) AND $_SERVER['REQUEST_METHOD'] == "POST"){
 $_SESSION['choose_session'] = $choose_session;
 $email = $_SESSION['common_entrance_email'];
  $class_price = $entrance_fees * 100;
-  include ('../../incs-arahman/pay.php');
+  include ('../incs-arahman/pay.php');
 
 
 
@@ -81,7 +81,7 @@ $email = $_SESSION['common_entrance_email'];
 
 ?>
 
-<?php include_once ('../../incs-arahman/header-admin.php');?>
+<?php include_once ('../incs-arahman/header-admin.php');?>
 
 
 

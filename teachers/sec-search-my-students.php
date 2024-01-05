@@ -1,7 +1,7 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
-include("../../incs-arahman/sec_cookie_for_most_teachers.php");
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
+include("../incs-arahman/sec_cookie_for_most_teachers.php");
 ?>
 <?php
 if(!isset($_SESSION['secondary_teacher_id'])){   //Not a teacher? Please leave
@@ -15,7 +15,7 @@ if(!isset($_GET['students_name']) || !isset($_GET['search_button'])){
 $_GET['students_name']= ""; 
 }
 
-include_once ('../../incs-arahman/paginate.php');
+include_once ('../incs-arahman/paginate.php');
 $statement = "secondary_school_students, secondary_school_classes WHERE (secondary_class_id = sec_class_id AND sec_active_email = '1' AND sec_paid = '1' AND sec_admit = '1') AND secondary_class_id = '".$_SESSION['secondary_teacher_class_id']."' AND (sec_firstname LIKE '%".mysqli_real_escape_string ($connect,$_GET['students_name'])."%' OR sec_surname LIKE '%".mysqli_real_escape_string ($connect,$_GET['students_name'])."%') ORDER BY secondary_id DESC"; 
 
 $page = (int)(!isset($_GET["page"]) ? 1 : $_GET["page"]);
@@ -29,7 +29,7 @@ $page = (int)(!isset($_GET["page"]) ? 1 : $_GET["page"]);
 ?>
 
 
-<?php include_once("../../incs-arahman/header-teacher-students.php");?>
+<?php include_once("../incs-arahman/header-teacher-students.php");?>
 
 
 
@@ -151,6 +151,6 @@ $page = (int)(!isset($_GET["page"]) ? 1 : $_GET["page"]);
                 <?php echo pagination($statement,$per_page,$page,$url=GEN_WEBSITE.'/teachers/sec-search-my-students.php?students_name='.$_GET['students_name'].'&'); ?>
 			   
                 <!-- content-wrapper ends -->
-            <?php include_once("../../incs-arahman/footer-teacher-students.php"); ?>
+            <?php include_once("../incs-arahman/footer-teacher-students.php"); ?>
 
 

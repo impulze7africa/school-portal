@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 //include("../incs_shop/cookie_for_most.php");
 //include('../users/includes/menu.php');
 
@@ -89,7 +89,7 @@ while ($row = mysqli_fetch_array($queries)) {
 
  
 ?>
- <?php require_once ('../../incs-arahman/dashboard.php');?>  
+ <?php require_once ('../incs-arahman/dashboard.php');?>  
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
@@ -173,7 +173,7 @@ echo '<h3 class="text-center">Common Entrance Fee Edited Successfully</h3>
 
             </div>
 
-           <?php require_once ('../../incs-arahman/dashboard-footer.php'); ?>
+           <?php require_once ('../incs-arahman/dashboard-footer.php'); ?>
 
 
 

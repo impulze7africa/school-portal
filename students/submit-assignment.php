@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 //include("../incs_shop/cookie_for_most.php");
 //include('../users/includes/menu.php');
 ?>
@@ -106,7 +106,7 @@ if (mysqli_affected_rows($connect) == 1) {
 
 
 
-<?php include("../../incs-arahman/header-students.php");?>
+<?php include("../incs-arahman/header-students.php");?>
 
 
 
@@ -185,7 +185,7 @@ if (mysqli_affected_rows($connect) == 1) {
 
 
 
-<?php include_once("../../incs-arahman/footer-teacher-students.php"); ?>
+<?php include_once("../incs-arahman/footer-teacher-students.php"); ?>
 
 
 

@@ -1,8 +1,8 @@
 <?php
-require_once ('../incs-arahman/config.php');
-require_once ('../incs-arahman/gen_serv_con.php');
-include ('../incs-arahman/header.php');
-//include(dirname(__DIR__).'../incs-arahman/menu.php');
+require_once ('incs-arahman/config.php');
+require_once ('incs-arahman/gen_serv_con.php');
+include ('incs-arahman/header.php');
+//include(dirname(__DIR__).'incs-arahman/menu.php');
 ?>
     <!-- Sub Header -->
     <div class="sub-header">

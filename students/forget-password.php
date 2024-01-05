@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 
 ?>
 <?php
@@ -103,7 +103,7 @@ if(isset($_POST['submit']) AND $_SERVER['REQUEST_METHOD'] == "POST"){
         </header>';
 	
 		
-    include ('../../incs-arahman/footer.php');
+    include ('../incs-arahman/footer.php');
 		exit();
 
 
@@ -172,7 +172,7 @@ if(isset($_POST['submit']) AND $_SERVER['REQUEST_METHOD'] == "POST"){
         </header>';
 	
 		
-    include ('../../incs-arahman/footer.php');
+    include ('../incs-arahman/footer.php');
 		exit();
 
 
@@ -203,8 +203,8 @@ if(isset($_POST['submit']) AND $_SERVER['REQUEST_METHOD'] == "POST"){
 ?>
 
 <?php
-include_once ('../../incs-arahman/header-admin.php');
-include_once ('../../incs-arahman/menu-admin.php');
+include_once ('../incs-arahman/header-admin.php');
+include_once ('../incs-arahman/menu-admin.php');
 ?>
 
 
@@ -257,4 +257,4 @@ include_once ('../../incs-arahman/menu-admin.php');
     </div>
     </section>
 
-    <?php include ('../../incs-arahman/footer.php');?>
+    <?php include ('../incs-arahman/footer.php');?>

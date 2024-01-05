@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 //include("../incs_shop/cookie_for_most.php");
 //include('../users/includes/menu.php');
 
@@ -161,7 +161,7 @@ $sec_errors = array();
 
 
 
-<?php require_once('../../incs-arahman/dashboard.php'); ?>
+<?php require_once('../incs-arahman/dashboard.php'); ?>
 
             <div class="main-panel">
                 <div class="content-wrapper">
@@ -567,7 +567,7 @@ $(document).ready(function() {
 $('#class-selection').on('select', function() {
 var category_id = this.value;
 $.ajax({
-url: "../incs-arahman/selecting-school.php",
+url: "incs-arahman/selecting-school.php",
 type: "POST",
 data: {
 school: category_id
@@ -583,4 +583,4 @@ $("#class-selection").html(result);
 
 
 
-            <?php require_once ('../../incs-arahman/dashboard-footer.php'); ?>
+            <?php require_once ('../incs-arahman/dashboard-footer.php'); ?>

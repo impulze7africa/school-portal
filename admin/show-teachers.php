@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 //include("../incs_shop/cookie_for_most.php");
 //include('../users/includes/menu.php');
 
@@ -35,7 +35,7 @@ exit();
 ?>
 
 
-<?php require_once ('../../incs-arahman/dashboard.php');?>
+<?php require_once ('../incs-arahman/dashboard.php');?>
 
   <!-- partial -->
         <div class="main-panel">
@@ -121,7 +121,7 @@ $_GET = array();
               }
               // $results = mysqli_query($connect,"SELECT primary_teacher_id, primary_teacher_active,  primary_teacher_class_id, primary_teacher_firstname, primary_teacher_surname, primary_teacher_sex, primary_teacher_qualification, primary_class_id, primary_class FROM primary_teachers, primary_school_classes WHERE primary_class_id = primary_teacher_class_id ORDER BY primary_teacher_id ASC LIMIT 3") or die(db_conn_error); 
 
-              include ('../../incs-arahman/paginate.php');
+              include ('../incs-arahman/paginate.php');
               $statement = "primary_teachers INNER JOIN primary_school_classes ON primary_class_id =  primary_teacher_class_id ORDER BY primary_teacher_id ASC";
                         
               $page = (int)(!isset($_GET["page"]) ? 1 : $_GET["page"]);
@@ -185,7 +185,7 @@ $_GET = array();
             </div>
          
            
-            <?php require_once ('../../incs-arahman/dashboard-footer.php'); ?>
+            <?php require_once ('../incs-arahman/dashboard-footer.php'); ?>
 
 
            

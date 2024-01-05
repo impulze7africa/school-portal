@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 //include("../incs_shop/cookie_for_most.php");
 //include('../users/includes/menu.php');
 
@@ -22,7 +22,7 @@ if(!isset($_GET['search-paid'])){
 }
 
 ?>
-<?php require_once ('../../incs-arahman/dashboard.php');?>
+<?php require_once ('../incs-arahman/dashboard.php');?>
 
 
         
@@ -108,7 +108,7 @@ $_GET = array();
 
            
                                         <?php
-                              include ('../../incs-arahman/paginate.php');
+                              include ('../incs-arahman/paginate.php');
                               $statement = "primary_school_students INNER JOIN primary_payment ON primary_payment_students_id = primary_id  WHERE (pri_paid = '1' AND pri_admit = '1' AND pri_active_email = '1') AND (pri_firstname LIKE '%".mysqli_real_escape_string($connect, $_GET['search-paid'])."%' OR pri_surname LIKE '%".mysqli_real_escape_string($connect, $_GET['search-paid'])."%') ORDER BY primary_id ASC";
                                         
                               $page = (int)(!isset($_GET["page"]) ? 1 : $_GET["page"]);
@@ -163,7 +163,7 @@ $_GET = array();
             </div>
          
            
-            <?php require_once ('../../incs-arahman/dashboard-footer.php'); ?>
+            <?php require_once ('../incs-arahman/dashboard-footer.php'); ?>
 
 
            

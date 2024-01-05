@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 //include("../incs_shop/cookie_for_most.php");
 //include('../users/includes/menu.php');
 ?>
@@ -11,8 +11,8 @@ if(isset($_SESSION['admin_active'])){   //This is for all admins. Every of them.
 }
 ?>
 <?php
-include ('../../incs-arahman/header-admin.php');
-include ('../../incs-arahman/menu-admin.php');
+include ('../incs-arahman/header-admin.php');
+include ('../incs-arahman/menu-admin.php');
 ?>
 
 <?php

@@ -6,19 +6,19 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the */
-define( 'DB_NAME', 'devtestc_arahman_portal');
+define( 'DB_NAME', 'plushher_portal_db');
 
 /** MySQL database username */
-define( 'DB_USER', 'devtestc_arahman_portal' );
+define( 'DB_USER', 'plushher_portal_user' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '*IijcerMGM}U' );
+define( 'DB_PASSWORD', '}9$PWK8g(8GK' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
 
 
-define ('GEN_WEBSITE', 'http://devtest.com.ng/school-portal');	// http://localhost/arahman/arahman /
+define ('GEN_WEBSITE', 'https://schoolportal.plushheritage.com.ng');	// http://localhost/arahman/arahman /
 date_default_timezone_set('UTC');
 session_start();
 
@@ -91,4 +91,3 @@ function genReference($qtd){
     
         return $reference;
     }
-

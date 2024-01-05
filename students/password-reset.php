@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 
 ?>
 <?php
@@ -18,7 +18,7 @@ exit();
 
 ?>
 <?php
-include_once ('../../incs-arahman/header-admin.php');
+include_once ('../incs-arahman/header-admin.php');
 
 ?>
 <?php 
@@ -95,7 +95,7 @@ if($_GET['school'] == 1){
         </header>';
 	
 		
-    include ('../../incs-arahman/footer.php');
+    include ('../incs-arahman/footer.php');
 		exit();
 
 }else{
@@ -142,7 +142,7 @@ if($_GET['school'] == 1){
 
 	
 		
-    include ('../../incs-arahman/footer.php');
+    include ('../incs-arahman/footer.php');
 		exit();
 
 
@@ -295,4 +295,4 @@ if(mysqli_num_rows($query) == 1){
     echo '<center><h2>Invalid link</h2></center>';
 }
 ?>
-<?php include ('../../incs-arahman/footer.php');?>
+<?php include ('../incs-arahman/footer.php');?>

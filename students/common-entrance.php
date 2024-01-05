@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 
 ?>
 <?php
@@ -12,10 +12,10 @@ $query_term_start = mysqli_query($connect, "SELECT term_start, term_end, choose_
 
   }
   if(empty($start_var) || empty($end_var) || $choose_term_var != 'Third term'){ 
-    include ('../../incs-arahman/header-gen.php');
-include('../../incs-arahman/menu.php');
+    include ('../incs-arahman/header-gen.php');
+include('../incs-arahman/menu.php');
    echo 'Registration for new session is closed';
-   include ('../../incs-arahman/footer.php');
+   include ('../incs-arahman/footer.php');
    exit();
 
   }
@@ -136,7 +136,7 @@ if(preg_match('/^.{6,255}$/i',$_POST['password'])){
 ?>
 
 <?php
-include_once ('../../incs-arahman/header-admin.php');
+include_once ('../incs-arahman/header-admin.php');
 
 ?>
 <?php

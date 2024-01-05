@@ -1,6 +1,6 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 //include("../incs_shop/cookie_for_most.php");
 //include('../users/includes/menu.php');
 
@@ -15,9 +15,9 @@ if($_SESSION['admin_type'] != ADMISSION){
 }
 ?>
 
-<?php require_once ('../../incs-arahman/dashboard.php');?>
+<?php require_once ('../incs-arahman/dashboard.php');?>
 <?php
-include_once ('../../incs-arahman/deny-student.php');
+include_once ('../incs-arahman/deny-student.php');
 ?>
 
 
@@ -49,11 +49,11 @@ $_GET = array();
 }
 ?>
 <?php
-include_once ('../../incs-arahman/reject-student-status.php');
+include_once ('../incs-arahman/reject-student-status.php');
 ?>           
 
 <?php
-include ('../../incs-arahman/paginate.php');
+include ('../incs-arahman/paginate.php');
 
 
 $statement = "primary_school_students WHERE (pri_paid = '0' AND pri_admit = '0' AND pri_active_email = '1' AND pri_class_id != '0') ORDER BY primary_id DESC";
@@ -139,7 +139,7 @@ echo '<h3 class="text-center">No result found</h3>';
             </div>
          
            
-            <?php require_once ('../../incs-arahman/dashboard-footer.php'); ?>
+            <?php require_once ('../incs-arahman/dashboard-footer.php'); ?>
 
 
            

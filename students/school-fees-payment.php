@@ -1,13 +1,13 @@
 <?php
-require_once ('../../incs-arahman/config.php');
-require_once ('../../incs-arahman/gen_serv_con.php');
+require_once ('../incs-arahman/config.php');
+require_once ('../incs-arahman/gen_serv_con.php');
 
 ?>
 <?php
 $toggle_position = mysqli_query($connect,"SELECT admin_pay_reg_toggle FROM admin_owner WHERE admin_pay_reg_toggle = 'close'") or die(db_conn_error);
 if(mysqli_num_rows($toggle_position) == 1){
 
-  include_once ('../../incs-arahman/header-admin.php');
+  include_once ('../incs-arahman/header-admin.php');
 
 echo 'Payment from portal is currently close';
 
@@ -209,7 +209,7 @@ exit();
 ?>
 
 <?php
-include_once ('../../incs-arahman/header-admin.php');
+include_once ('../incs-arahman/header-admin.php');
 
 ?>
 <?php

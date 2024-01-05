@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/plushher/public_html/schoolportal.plushheritage.com.ng
+    - /bin/cp -R * $DEPLOYPATH
